@@ -1,0 +1,322 @@
+[
+  {
+    "Restaurant": "ZZ & Simone's",
+    "Location": "5 points",
+    "Events": "none",
+    "Price": "$$$",
+    "Reservation Status": "yes",
+    "Link": "https://www.zzandsimones.com/"
+  },
+  {
+    "Restaurant": "Shokitini",
+    "Location": "downtown",
+    "Events": "karaoke",
+    "Price": "$$",
+    "Reservation Status": "yes",
+    "Link": "https://shokitini.com/"
+  },
+  {
+    "Restaurant": "Marker 7",
+    "Location": "5 points",
+    "Events": "none",
+    "Price": "$$",
+    "Reservation Status": "no",
+    "Link": "https://www.marker7coastalgrill.co/"
+  },
+  {
+    "Restaurant": "Baddie's Burgers",
+    "Location": "5 points",
+    "Events": "none",
+    "Price": "$",
+    "Reservation Status": "not necessary",
+    "Link": "https://www.eatbaddies.com/"
+  },
+  {
+    "Restaurant": "Emmy Squared",
+    "Location": "<10 mins from campus",
+    "Events": "none",
+    "Price": "$$",
+    "Reservation Status": "yes",
+    "Link": "https://www.emmysquaredpizza.com/location/athens-ga/"
+  },
+  {
+    "Restaurant": "Marti's at Midday",
+    "Location": "<10 mins from campus",
+    "Events": "none",
+    "Price": "$",
+    "Reservation Status": "no",
+    "Link": "https://martisatmidday.com/"
+  },
+  {
+    "Restaurant": "Ahi Hibachi & Poke",
+    "Location": "downtown",
+    "Events": "none",
+    "Price": "$",
+    "Reservation Status": "not necessary",
+    "Link": "https://www.ahihibachi.com/"
+  },
+  {
+    "Restaurant": "The Globe",
+    "Location": "downtown",
+    "Events": "live music",
+    "Price": "$$",
+    "Reservation Status": "no",
+    "Link": "https://www.globetavern.com/"
+  },
+  {
+    "Restaurant": "Fully Loaded",
+    "Location": "5 points",
+    "Events": "trivia",
+    "Price": "$",
+    "Reservation Status": "yes",
+    "Link": "https://www.fullyloaded.pizza/"
+  },
+  {
+    "Restaurant": "Sakura Hibachi & Sushi Bar",
+    "Location": "5 points",
+    "Events": "none",
+    "Price": "$$",
+    "Reservation Status": "yes",
+    "Link": "https://www.sakurahibachiathens.com/"
+  },
+  {
+    "Restaurant": "The Pine Bar",
+    "Location": "5 points",
+    "Events": "live music, bingo",
+    "Price": "$$",
+    "Reservation Status": "no",
+    "Link": "https://www.therootathens.com/"
+  },
+  {
+    "Restaurant": "Kique's Kitchen",
+    "Location": ">10 mins from campus",
+    "Events": "none",
+    "Price": "$",
+    "Reservation Status": "yes",
+    "Link": "https://kiqueskitchen.com/"
+  },
+  {
+    "Restaurant": "Tacos Los Plebes",
+    "Location": ">10 mins from campus",
+    "Events": "none",
+    "Price": "$",
+    "Reservation Status": "not necessary",
+    "Link": "https://doordash.com/en/store/tacos-los-plebes-danielsville-rd-40314857/?srsltid=AU7gw4UOSvkiUBYUC1Y-Fj8ipToWdBSxJ7Utmvu-Qi_egZ9vnVcHgXFt"
+  },
+  {
+    "Restaurant": "Pauley's",
+    "Location": "downtown",
+    "Events": "trivia",
+    "Price": "$$",
+    "Reservation Status": "no",
+    "Link": "https://pauleyscrepebar.com/"
+  },
+  {
+    "Restaurant": "Tres Amigos",
+    "Location": "downtown",
+    "Events": "none",
+    "Price": "$",
+    "Reservation Status": "not necessary",
+    "Link": "https://www.tresamigosathens.com/"
+  },
+  {
+    "Restaurant": "The Place",
+    "Location": "downtown",
+    "Events": "none",
+    "Price": "$$",
+    "Reservation Status": "yes",
+    "Link": "https://www.theplaceathens.com/"
+  },
+  {
+    "Restaurant": "Osterio Olio",
+    "Location": "<10 mins from campus",
+    "Events": "live music",
+    "Price": "$$$",
+    "Reservation Status": "yes",
+    "Link": "https://www.osteriaolio.com/"
+  },
+  {
+    "Restaurant": "5 & 10",
+    "Location": "5 points",
+    "Events": "none",
+    "Price": "$$$",
+    "Reservation Status": "yes",
+    "Link": "https://www.fiveandten.com/"
+  },
+  {
+    "Restaurant": "Tiger Sushi",
+    "Location": "downtown",
+    "Events": "all you can eat",
+    "Price": "$$",
+    "Reservation Status": "no",
+    "Link": "https://order.online/store/tiger-sushi-athens-32588309"
+  },
+  {
+    "Restaurant": "Grindhouse",
+    "Location": "5 points",
+    "Events": "trivia",
+    "Price": "$",
+    "Reservation Status": "not necessary",
+    "Link": "https://www.grindhouseburgers.com/"
+  },
+  {
+    "Restaurant": "South Kitchen + Bar",
+    "Location": "downtown",
+    "Events": "none",
+    "Price": "$$",
+    "Reservation Status": "yes",
+    "Link": "https://www.southkitchenbar.com/"
+  },
+  {
+    "Restaurant": "Paloma Park",
+    "Location": "downtown",
+    "Events": "live music, trivia",
+    "Price": "$$",
+    "Reservation Status": "no",
+    "Link": "https://www.palomapark.com/"
+  },
+  {
+    "Restaurant": "El Barrio",
+    "Location": "5 points",
+    "Events": "none",
+    "Price": "$",
+    "Reservation Status": "no",
+    "Link": "https://www.elbarrioathens.com/"
+  },
+  {
+    "Restaurant": "Taco Mama",
+    "Location": "downtown",
+    "Events": "none",
+    "Price": "$",
+    "Reservation Status": "no",
+    "Link": "https://tacomamaonline.com/"
+  },
+  {
+    "Restaurant": "Local 706",
+    "Location": "5 points",
+    "Events": "trivia",
+    "Price": "$$",
+    "Reservation Status": "no",
+    "Link": "https://www.local706athens.com/"
+  },
+  {
+    "Restaurant": "Royal Peasant",
+    "Location": "5 points",
+    "Events": "live music",
+    "Price": "$$",
+    "Reservation Status": "no",
+    "Link": "https://www.royalpeasant.com/"
+  },
+  {
+    "Restaurant": "Expat",
+    "Location": "5 points",
+    "Events": "none",
+    "Price": "$$",
+    "Reservation Status": "yes",
+    "Link": "https://www.theexpatathens.com/"
+  },
+  {
+    "Restaurant": "Five Bar",
+    "Location": "downtown",
+    "Events": "live music",
+    "Price": "$$",
+    "Reservation Status": "no",
+    "Link": "https://www.five-bar.com/location/athens-georgia/"
+  },
+  {
+    "Restaurant": "Rook & Pawn",
+    "Location": "downtown",
+    "Events": "trivia",
+    "Price": "$",
+    "Reservation Status": "no",
+    "Link": "https://www.therookandpawn.com/"
+  },
+  {
+    "Restaurant": "Hendershots Cafe",
+    "Location": "<10 mins from campus",
+    "Events": "live music",
+    "Price": "$",
+    "Reservation Status": "no",
+    "Link": "https://hendershotsathens.com/?srsltid=AU7gw4WM5E48Qe-Z5wenMd1tNLqBx4e-dfpMpC3FHL7oe_TsBdPgWgWp"
+  },
+  {
+    "Restaurant": "Trappeze",
+    "Location": "downtown",
+    "Events": "trivia",
+    "Price": "$$",
+    "Reservation Status": "yes",
+    "Link": "https://www.trappezepub.com/"
+  },
+  {
+    "Restaurant": "Union Fare",
+    "Location": "downtown",
+    "Events": "live music",
+    "Price": "$",
+    "Reservation Status": "no",
+    "Link": "https://www.unionfareathens.com/"
+  },
+  {
+    "Restaurant": "Cafe Racer",
+    "Location": "<10 mins from campus",
+    "Events": "trivia",
+    "Price": "$$",
+    "Reservation Status": "no",
+    "Link": "https://www.caferacer78.com/"
+  },
+  {
+    "Restaurant": "Mama's Boy",
+    "Location": "<10 mins from campus",
+    "Events": "none",
+    "Price": "$",
+    "Reservation Status": "no",
+    "Link": "https://www.mamasboyathens.com/"
+  },
+  {
+    "Restaurant": "Chuck's Fish",
+    "Location": "downtown",
+    "Events": "none",
+    "Price": "$$$",
+    "Reservation Status": "yes",
+    "Link": "https://www.chucksfish.com/location/chucks-fish-athens/"
+  },
+  {
+    "Restaurant": "Cali n Tito's",
+    "Location": "5 points",
+    "Events": "none",
+    "Price": "$",
+    "Reservation Status": "no",
+    "Link": "https://cali-n-titos.grubbio.com/"
+  },
+  {
+    "Restaurant": "Puma Yu's",
+    "Location": "<10 mins from campus",
+    "Events": "none",
+    "Price": "$$",
+    "Reservation Status": "yes",
+    "Link": "https://pumayus.com/"
+  },
+  {
+    "Restaurant": "Ted's Most Best",
+    "Location": "downtown",
+    "Events": "none",
+    "Price": "$$",
+    "Reservation Status": "no",
+    "Link": "https://884616.us30.myftpupload.com/"
+  },
+  {
+    "Restaurant": "Last Resort Grill",
+    "Location": "downtown",
+    "Events": "none",
+    "Price": "$$",
+    "Reservation Status": "yes",
+    "Link": "https://www.lastresortgrill.com/"
+  },
+  {
+    "Restaurant": "Señor Bird's Tacos + Tequila",
+    "Location": "downtown",
+    "Events": "live music",
+    "Price": "$$",
+    "Reservation Status": "yes",
+    "Link": "https://elpasotacosandtequila.com/"
+  }
+]

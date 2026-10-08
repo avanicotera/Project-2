@@ -5,30 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mangia | Athens Restaurants</title>
 
-  <!-- Script font for the title (needs internet to load) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
     <h1>Mangia</h1>
-    <p>Where to eat in Athens</p>
+    <p>A STUDENT'S RESTAURANT GUIDE</p>
   </header>
 
-  <!-- script.js fills this nav bar with the filter buttons -->
-  <nav id="filters"></nav>
+  <nav>
+    <button class="nav-button" onclick="showAll()">Show all</button>
 
+    <div class="dropdown">
+      <button class="nav-button" onclick="toggleMenu('location-menu')">Location ▾</button>
+      <div class="menu" id="location-menu">
+        <button class="menu-option" onclick="filterBy('Location', '5 points', 'Five Points')">Five Points</button>
+        <button class="menu-option" onclick="filterBy('Location', 'downtown', 'Downtown')">Downtown</button>
+        <button class="menu-option" onclick="filterBy('Location', '<10 mins from campus', 'Under 10 mins from campus')">Under 10 mins from campus</button>
+        <button class="menu-option" onclick="filterBy('Location', '>10 mins from campus', 'Over 10 mins from campus')">Over 10 mins from campus</button>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="nav-button" onclick="toggleMenu('price-menu')">Price ▾</button>
+      <div class="menu" id="price-menu">
+        <button class="menu-option" onclick="filterBy('Price', '$', '$')">$</button>
+        <button class="menu-option" onclick="filterBy('Price', '$$', '$$')">$$</button>
+        <button class="menu-option" onclick="filterBy('Price', '$$$', '$$$')">$$$</button>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="nav-button" onclick="toggleMenu('cuisine-menu')">Cuisine ▾</button>
+      <div class="menu" id="cuisine-menu">
+        <button class="menu-option" onclick="filterBy('Cuisine', 'American', 'American')">American</button>
+        <button class="menu-option" onclick="filterBy('Cuisine', 'Asian', 'Asian')">Asian</button>
+        <button class="menu-option" onclick="filterBy('Cuisine', 'English', 'English')">English</button>
+        <button class="menu-option" onclick="filterBy('Cuisine', 'Food Trucks', 'Food Trucks')">Food Trucks</button>
+        <button class="menu-option" onclick="filterBy('Cuisine', 'Italian', 'Italian')">Italian</button>
+        <button class="menu-option" onclick="filterBy('Cuisine', 'Mexican', 'Mexican')">Mexican</button>
+        <button class="menu-option" onclick="filterBy('Cuisine', 'Seafood', 'Seafood')">Seafood</button>
+        <button class="menu-option" onclick="filterBy('Cuisine', 'Sushi', 'Sushi')">Sushi</button>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="nav-button" onclick="toggleMenu('reservations-menu')">Reservations ▾</button>
+      <div class="menu" id="reservations-menu">
+        <button class="menu-option" onclick="filterBy('Reservation Status', 'yes', 'Takes reservations')">Takes reservations</button>
+        <button class="menu-option" onclick="filterBy('Reservation Status', 'no', 'No reservations')">No reservations</button>
+        <button class="menu-option" onclick="filterBy('Reservation Status', 'not necessary', 'Reservations not needed')">Reservations not needed</button>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="nav-button" onclick="toggleMenu('events-menu')">Events ▾</button>
+      <div class="menu" id="events-menu">
+        <button class="menu-option" onclick="filterBy('Events', 'any', 'Any event')">Any event</button>
+        <button class="menu-option" onclick="filterBy('Events', 'live music', 'Live music')">Live music</button>
+        <button class="menu-option" onclick="filterBy('Events', 'trivia', 'Trivia')">Trivia</button>
+        <button class="menu-option" onclick="filterBy('Events', 'karaoke', 'Karaoke')">Karaoke</button>
+        <button class="menu-option" onclick="filterBy('Events', 'bingo', 'Bingo')">Bingo</button>
+        <button class="menu-option" onclick="filterBy('Events', 'all you can eat', 'All you can eat')">All you can eat</button>
+      </div>
+    </div>
+  </nav>
   <main>
+    <h2 id="filter-title">All Restaurants</h2>
     <p id="count"></p>
 
-    <!-- script.js fills this section with the restaurant cards -->
     <section id="restaurant-list"></section>
   </main>
-
   <script src="script.js"></script>
 </body>
 </html>

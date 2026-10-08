@@ -1,225 +1,229 @@
-/* ---------- Colors (change these to change the whole look) ---------- */
-:root {
-    --burnt-orange: #cc5500;
-    --dark-orange: #a84300;
-    --red: #c1121f;
-    --cream: #fdf6ec;
-    --peach: #f6dcc3;
-    --brown: #3b2a20;
-  }
-  
-  /* ---------- Basics ---------- */
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--cream);
-    color: var(--brown);
-  }
-  
-  /* ---------- Title ---------- */
-  header {
-    text-align: center;
-    padding: 35px 20px 25px 20px;
-    border-bottom: 4px solid var(--red);
-  }
-  
-  header h1 {
-    margin: 0;
-    font-family: "Dancing Script", cursive;
-    font-size: 72px;
-    color: var(--burnt-orange);
-  }
-  
-  header p {
-    margin: 0;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-size: 13px;
-    color: var(--dark-orange);
-  }
-  
-  /* ---------- Nav bar ---------- */
-  nav {
-    position: sticky;      /* stays at the top while you scroll */
-    top: 0;
-    z-index: 10;
-    background-color: var(--burnt-orange);
-    padding: 10px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-  }
-  
-  .nav-button {
-    background-color: transparent;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .nav-button:hover {
-    background-color: var(--dark-orange);
-  }
-  
-  /* the button that is currently selected */
-  .nav-button.active {
-    background-color: var(--red);
-  }
-  
-  /* ---------- Dropdown menus ---------- */
-  .dropdown {
-    position: relative;
-  }
-  
-  .menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 220px;
-    background-color: white;
-    border: 1px solid var(--peach);
-    border-top: 3px solid var(--red);
-    border-radius: 0 0 6px 6px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    padding: 6px 0;
-  }
-  
-  .menu.open {
-    display: block;
-  }
-  
-  .menu-option {
-    display: block;
-    width: 100%;
-    text-align: left;
-    background: none;
-    border: none;
-    padding: 9px 16px;
-    font-size: 14px;
-    color: var(--brown);
-    cursor: pointer;
-  }
-  
-  .menu-option:hover {
-    background-color: var(--peach);
-  }
-  
-  .menu-option.active {
-    background-color: var(--red);
-    color: white;
-  }
-  
-  /* ---------- Main area ---------- */
-  main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  #count {
-    margin: 10px 0 20px 0;
-    font-weight: bold;
-    color: var(--dark-orange);
-  }
-  
-  /* ---------- Restaurant cards ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fdf6ec;
+  color: #cc5500;
+}
+
+header {
+  text-align: center;
+  padding: 35px 20px 25px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Dancing Script", cursive;
+  font-size: 72px;
+  color: #cc5500;
+}
+
+header p {
+  margin: 0;
+  font-size: 16px;
+  color: #cc5500;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #cc5500;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.nav-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.nav-button:hover {
+  background-color: #a84300;
+}
+
+.nav-button.active {
+  background-color: #c1121f;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background-color: white;
+  padding: 6px 0;
+}
+
+.menu.open {
+  display: block;
+}
+
+.menu-option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 9px 16px;
+  font-size: 14px;
+  color: #cc5500;
+  cursor: pointer;
+}
+
+.menu-option:hover {
+  background-color: #f6dcc3;
+}
+
+.menu-option.active {
+  background-color: #c1121f;
+  color: white;
+}
+
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#filter-title {
+  margin: 10px 0 0 0;
+  font-family: "Dancing Script", cursive;
+  font-size: 38px;
+  color: #cc5500;
+}
+
+#count {
+  margin: 4px 0 20px 0;
+  font-weight: bold;
+  color: #cc5500;
+}
+
+#restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+}
+
+.photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background-color: #f6dcc3;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-name {
+  padding: 12px 14px;
+}
+
+.card-name h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #cc5500;
+}
+
+.details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background-color: rgba(168, 67, 0, 0.92);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.card:hover .details,
+.card:focus-within .details {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.details p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.details a {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 8px 16px;
+  background-color: white;
+  color: #c1121f;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.details a:hover {
+  background-color: #f6dcc3;
+}
+
+@media (max-width: 1000px) {
   #restaurant-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 22px;
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  .card {
-    background-color: white;
-    border: 1px solid var(--peach);
-    border-top: 4px solid var(--burnt-orange);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 750px) {
+  #restaurant-list {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .photo {
-    width: 100%;
-    height: 170px;
-    background-color: var(--peach);
+}
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 54px;
   }
-  
-  .photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+
+  .dropdown {
+    position: static;
   }
-  
-  /* shows up when a photo file is missing */
-  .placeholder {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--dark-orange);
-    font-size: 14px;
-    text-align: center;
-    padding: 10px;
+
+  .menu {
+    left: 10px;
+    right: 10px;
   }
-  
-  .placeholder small {
-    margin-top: 6px;
-    font-size: 11px;
+}
+
+@media (max-width: 450px) {
+  #restaurant-list {
+    grid-template-columns: 1fr;
   }
-  
-  .card-info {
-    padding: 12px 15px 16px 15px;
-  }
-  
-  .card-info h2 {
-    margin: 0 0 8px 0;
-    font-size: 20px;
-    color: var(--dark-orange);
-  }
-  
-  .card-info p {
-    margin: 4px 0;
-    font-size: 14px;
-  }
-  
-  .card-info a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 7px 14px;
-    background-color: var(--red);
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    border-radius: 4px;
-  }
-  
-  .card-info a:hover {
-    background-color: var(--dark-orange);
-  }
-  
-  /* ---------- Small screens ---------- */
-  @media (max-width: 700px) {
-    header h1 {
-      font-size: 54px;
-    }
-  
-    .dropdown {
-      position: static;
-    }
-  
-    .menu {
-      left: 10px;
-      right: 10px;
-    }
-  }
+}

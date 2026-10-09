@@ -83,8 +83,9 @@ function showRestaurants(list) {
 
 function makeCard(restaurant) {
   let name = restaurant["Restaurant"];
+
   let photo = IMAGE_FOLDER + getPhotoName(name);
-  let backupPhoto = IMAGE_FOLDER + name.replace(/[^a-zA-Z0-9]/g, "") + "pic.png";
+  let backupPhoto = IMAGE_FOLDER + getPhotoName(name).toLowerCase();
 
   let card =
     '<div class="card">' +
@@ -106,6 +107,5 @@ function makeCard(restaurant) {
 }
 
 function getPhotoName(name) {
-  let cleanName = name.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
-  return cleanName + "pic.png";
+  return name.replace(/[^a-zA-Z0-9]/g, "") + "pic.png";
 }

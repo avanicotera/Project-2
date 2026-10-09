@@ -105,6 +105,6 @@ function makeCard(restaurant) {
 }
 
 function getPhotoName(name) {
-  let cleanName = name.replace(/[^a-zA-Z0-9]/g, "");
+  let cleanName = name.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
   return cleanName + "pic.png";
 }

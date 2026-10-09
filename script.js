@@ -84,11 +84,12 @@ function showRestaurants(list) {
 function makeCard(restaurant) {
   let name = restaurant["Restaurant"];
   let photo = IMAGE_FOLDER + getPhotoName(name);
+  let backupPhoto = IMAGE_FOLDER + name.replace(/[^a-zA-Z0-9]/g, "") + "pic.png";
 
   let card =
     '<div class="card">' +
       '<div class="photo">' +
-        '<img src="' + photo + '" alt="' + name + '">' +
+        '<img src="' + photo + '" alt="' + name + '" onerror="this.onerror=null; this.src=\'' + backupPhoto + '\'">' +
       '</div>' +
       '<div class="details">' +
         '<p>' + restaurant["Location"] + '</p>' +
